@@ -1,4 +1,5 @@
-﻿using BancoDigital.Infra;
+﻿using BancoDigital.Controllers;
+using BancoDigital.Infra;
 using BancoDigital.Models;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,34 +1,45 @@
-﻿@model  List<BancoDigital.Models.Cliente>
-<div class="text-center">
-    <h1 class="display-4">Bem vindo ao Banco Digital</h1>
-    <form>
-        <fieldset>
-            <legend>Titular</legend>
-            <label>
-                Nome:
-                <select>
-                    @foreach (var c in Model)
-                    {
-                        <option>@c.Nome</option>
-                    }
-                </select>
-            </label>
-            <label>
-                Tipo Da Conta:
-                <select>
-                    <option>                                  
-                    </option>
-                </select>  
-            </label>
-            <label>Senha: <input type="password" /></label>
-        </fieldset>
-        <fieldset>
-            <legend>Operações</legend>
-            <label>Nome: <input type="text" readonly /></label>
-            <label>Saldo: <input type="text" readonly /></label>
-            <label>Valor: <input type="text" /></label>
-            <button>Sacar</button>
-            <button>Depositar</button>
-        </fieldset>
-    </form>
-</div>
+﻿@model List<BancoDigital.Models.Cliente>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Ínicio</title>
+    </head>
+    <body>
+        <div class="text-center">
+            <h1 class="display-4">Bem vindo ao Banco Digital</h1>
+            <form>
+            <fieldset>
+                <legend>Titular</legend>
+                <label>
+                    Nome:
+                    <select>
+                        @foreach (var c in Model)
+                        {
+                            <option>@c.Nome</option>
+                        }
+                    </select>
+                </label>
+                <label>
+                    Tipo Da Conta:
+                    <select>
+                        <option>
+                        </option>
+                    </select>
+                </label>
+                <label>Senha: <input type="password" /></label>
+            </fieldset>
+            <fieldset>
+                <legend>Operações</legend>
+                <label>Nome: <input type="text" readonly /></label>
+                <label>Saldo: <input type="text" readonly /></label>
+                <label>Valor: <input type="text" /></label>
+                <button>Sacar</button>
+                <button>Depositar</button>
+            </fieldset>
+            </form>
+        </div>
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    </body>
+</html>

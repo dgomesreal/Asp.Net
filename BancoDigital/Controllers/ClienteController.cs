@@ -14,15 +14,24 @@ namespace BancoDigital.Controllers
 
         public IActionResult Novo()
         {
-            return View();
+            var model = new Cliente();
+            return View(model);
         }
 
         [HttpCliente]
         public IActionResult Adiciona(Cliente cliente)
         {
-            ClienteDAO dao = new ClienteDAO();
-            dao.Adiciona(cliente);
-            return RedirectToAction("Index", "Home");
+            if (ModelState.IsValid)
+            {
+                ClienteDAO dao = new ClienteDAO();
+                dao.Adiciona(cliente);
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                return View("Novo", cliente);
+            }
+           
         }
 
         public IActionResult RemoveCliente(int id)

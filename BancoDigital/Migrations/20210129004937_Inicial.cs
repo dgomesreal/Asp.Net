@@ -6,7 +6,7 @@ namespace BancoDigital.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(
+            /*migrationBuilder.CreateTable(
                 name: "Clientes",
                 columns: table => new
                 {
@@ -17,7 +17,7 @@ namespace BancoDigital.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Clientes", x => x.Id);
-                });
+                });*/
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
