@@ -1,10 +1,7 @@
 ﻿using BancoDigital.Infra;
 using BancoDigital.Models;
-using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace BancoDigital.DAO
 {
@@ -27,5 +24,15 @@ namespace BancoDigital.DAO
                 contexto.SaveChanges();
             } 
         } 
+
+        public void Remove(int id)
+        {
+            using(BancoDigitalContext contexto = new BancoDigitalContext())
+            {
+                Cliente cliente = contexto.Clientes.Find(id);
+                contexto.Clientes.Remove(cliente);
+                contexto.SaveChanges();
+            }
+        }
     }
 }

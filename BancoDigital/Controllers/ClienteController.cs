@@ -1,10 +1,7 @@
 ﻿using BancoDigital.DAO;
-using BancoDigital.Infra;
 using BancoDigital.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
 
 namespace BancoDigital.Controllers
 {
@@ -26,6 +23,13 @@ namespace BancoDigital.Controllers
             ClienteDAO dao = new ClienteDAO();
             dao.Adiciona(cliente);
             return RedirectToAction("Index", "Home");
+        }
+
+        public IActionResult RemoveCliente(int id)
+        {
+            ClienteDAO dao = new ClienteDAO();
+            dao.Remove(id);
+            return RedirectToAction("Index","Home");
         }
     }
     internal class HttpClienteAttribute : Attribute
