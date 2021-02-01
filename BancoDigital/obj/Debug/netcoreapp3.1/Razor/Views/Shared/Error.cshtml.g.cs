@@ -13,13 +13,6 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 1 "C:\Users\dgome\Google Drive\Faculdade\CAELUM\Web Asp.Net Core MVC e Entity Framework\Arquivos do curso\BancoDigital\BancoDigital\Views\_ViewImports.cshtml"
-using BancoDigital;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
 #line 2 "C:\Users\dgome\Google Drive\Faculdade\CAELUM\Web Asp.Net Core MVC e Entity Framework\Arquivos do curso\BancoDigital\BancoDigital\Views\_ViewImports.cshtml"
 using BancoDigital.Models;
 
@@ -27,7 +20,7 @@ using BancoDigital.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d6a5625cc8fb4476f348b0fe9041c550465d8bf9", @"/Views/Shared/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e083459865550f848020596dfd8021a07bcf9bd1", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e3cb3e9501d3acd665540258c2844c16d67f725d", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Error : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ErrorViewModel>
     {
         #pragma warning disable 1998

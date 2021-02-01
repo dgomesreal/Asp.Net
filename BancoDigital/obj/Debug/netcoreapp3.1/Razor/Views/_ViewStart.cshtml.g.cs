@@ -13,13 +13,6 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 1 "C:\Users\dgome\Google Drive\Faculdade\CAELUM\Web Asp.Net Core MVC e Entity Framework\Arquivos do curso\BancoDigital\BancoDigital\Views\_ViewImports.cshtml"
-using BancoDigital;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
 #line 2 "C:\Users\dgome\Google Drive\Faculdade\CAELUM\Web Asp.Net Core MVC e Entity Framework\Arquivos do curso\BancoDigital\BancoDigital\Views\_ViewImports.cshtml"
 using BancoDigital.Models;
 
@@ -27,7 +20,7 @@ using BancoDigital.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e083459865550f848020596dfd8021a07bcf9bd1", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e3cb3e9501d3acd665540258c2844c16d67f725d", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

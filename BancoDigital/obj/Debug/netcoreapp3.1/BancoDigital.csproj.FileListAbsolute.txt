@@ -20,7 +20,6 @@ C:\Users\dgome\Google Drive\Faculdade\CAELUM\Web Asp.Net Core MVC e Entity Frame
 C:\Users\dgome\Google Drive\Faculdade\CAELUM\Web Asp.Net Core MVC e Entity Framework\Arquivos do curso\BancoDigital\BancoDigital\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\dgome\Google Drive\Faculdade\CAELUM\Web Asp.Net Core MVC e Entity Framework\Arquivos do curso\BancoDigital\BancoDigital\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\dgome\Google Drive\Faculdade\CAELUM\Web Asp.Net Core MVC e Entity Framework\Arquivos do curso\BancoDigital\BancoDigital\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
-C:\Users\dgome\Google Drive\Faculdade\CAELUM\Web Asp.Net Core MVC e Entity Framework\Arquivos do curso\BancoDigital\BancoDigital\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\dgome\Google Drive\Faculdade\CAELUM\Web Asp.Net Core MVC e Entity Framework\Arquivos do curso\BancoDigital\BancoDigital\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\dgome\Google Drive\Faculdade\CAELUM\Web Asp.Net Core MVC e Entity Framework\Arquivos do curso\BancoDigital\BancoDigital\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\dgome\Google Drive\Faculdade\CAELUM\Web Asp.Net Core MVC e Entity Framework\Arquivos do curso\BancoDigital\BancoDigital\obj\Debug\netcoreapp3.1\BancoDigital.RazorTargetAssemblyInfo.cache
@@ -85,3 +84,5 @@ C:\Users\dgome\Google Drive\Faculdade\CAELUM\Web Asp.Net Core MVC e Entity Frame
 C:\Users\dgome\Google Drive\Faculdade\CAELUM\Web Asp.Net Core MVC e Entity Framework\Arquivos do curso\BancoDigital\BancoDigital\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\dgome\Google Drive\Faculdade\CAELUM\Web Asp.Net Core MVC e Entity Framework\Arquivos do curso\BancoDigital\BancoDigital\bin\Debug\netcoreapp3.1\Humanizer.dll
 C:\Users\dgome\Google Drive\Faculdade\CAELUM\Web Asp.Net Core MVC e Entity Framework\Arquivos do curso\BancoDigital\BancoDigital\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\dgome\Google Drive\Faculdade\CAELUM\Web Asp.Net Core MVC e Entity Framework\Arquivos do curso\BancoDigital\BancoDigital\obj\Debug\netcoreapp3.1\Razor\Views\Shared\EditorTemplates\Cliente.cshtml.g.cs
+C:\Users\dgome\Google Drive\Faculdade\CAELUM\Web Asp.Net Core MVC e Entity Framework\Arquivos do curso\BancoDigital\BancoDigital\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Scripts.cshtml.g.cs
