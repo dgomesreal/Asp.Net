@@ -9,6 +9,8 @@ namespace BancoDigital.Models
         //public int Cpf { get; set; }
         //public string Endereco { get; set; }
 
+        public Usuario Autor { get; set; }
+
         public int Id { get; set; }
 
         public Cliente(string nome)

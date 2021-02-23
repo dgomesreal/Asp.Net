@@ -1,5 +1,8 @@
+using BancoDigital.DAO;
+using BancoDigital.Infra;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -19,6 +22,13 @@ namespace BancoDigital
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDbContext<BancoDigitalContext>(
+                options => options.UseSqlServer(Configuration.GetConnectionString("BancoDigital"))
+            );
+            services.AddTransient<UsuarioDAO>();
+            services.AddTransient<ClienteDAO>();
+
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,11 +51,12 @@ namespace BancoDigital
 
             app.UseAuthorization();
 
+            app.UseSession();
+
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute("MyAreaAdmin","{area:exists}/{controller=Cliente}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute("default","{controller=Usuario}/{action=Login}/{id?}");
             });
         }
     }

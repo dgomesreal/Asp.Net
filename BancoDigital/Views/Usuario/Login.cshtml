@@ -1,0 +1,31 @@
+﻿@model LoginViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/estilo.css" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <main id="login-form">
+            <h2>Banco Digital</h2>
+            <form asp-area="" asp-action="Autentica" asp-controller="Usuario" method="post">
+                <label>Login:</label>
+                <input class="form-control" type="text" asp-for="Login" />
+                <span asp-validation-for="Login"></span>
+                <label>Senha:</label>
+                <input class="form-control" type="password" asp-for="Password" />
+                <span asp-validation-for="Password"></span><br />
+                <input class="btn-dark" type="submit" value="Login" /><br /><br />
+                <a asp-area="" asp-action="Novo" asp-controller="Usuario">Registrar-se</a>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

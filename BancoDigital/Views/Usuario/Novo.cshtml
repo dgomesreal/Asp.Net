@@ -1,0 +1,25 @@
+﻿@model RegistroViewModel
+<form asp-area="" asp-action="Cadastra" asp-controller="Usuario" method="post">
+    <div class="form-group">
+        <label>Nome</label>
+        <input class="form-control" asp-for="LoginName">
+        <span asp-validation-for="LoginName" />
+    </div>
+    <div class="form-group">
+        <label>Endereço de email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email" asp-for="Email">
+        <span asp-validation-for="Email" />
+        <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Senha</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha"  asp-for="Senha">
+        <span asp-validation-for="Senha" />
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Confirmação de Senha</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite sua senha novamente" asp-for="ConfirmacaoSenha">
+        <span asp-validation-for="ConfirmacaoSenha" />
+    </div>
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
+</form>

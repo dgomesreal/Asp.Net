@@ -7,16 +7,10 @@ namespace BancoDigital.Infra
 {
     public class BancoDigitalContext : DbContext
     {
+        public BancoDigitalContext(DbContextOptions<BancoDigitalContext> options) : base(options) { }
+
         public DbSet<Cliente> Clientes { get; set; }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            var builder = new ConfigurationBuilder()
-                                .SetBasePath(Directory.GetCurrentDirectory())
-                                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                                .AddEnvironmentVariables();
-            IConfiguration configuration = builder.Build();
-            string stringConexao = configuration.GetConnectionString("BancoDigital");
-            optionsBuilder.UseSqlServer(stringConexao);
-        }
+
+        public DbSet<Usuario> Usuarios { get; set; }
     }
 }

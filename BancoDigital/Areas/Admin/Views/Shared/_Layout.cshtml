@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BancoDigital</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    @*Comentario do Razor*@
+</head>
+<body>
+    <!--Cabeçalho-->
+    <partial name="_Cabecalho" />
+    <!--Região Principal-->
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <!--Rodapé-->
+    <partial name="_Rodape"/>
+    <!--Seção de carregamento de Scripts-->
+    @RenderSection("Scripts", required: false)    
+</body>
+</html>

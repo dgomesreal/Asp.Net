@@ -1,0 +1,14 @@
+﻿@model Cliente 
+<div>
+    <form asp-controller="Cliente" asp-action="Adiciona" method="Post">
+        <fieldset>                    
+            <legend>Nova Conta</legend>                    
+            @Html.EditorFor(c => c)                   
+            <button type="submit">Cadastrar</button>
+            <button type="submit" asp-action="Remove" value="/Models/Cliente/@Model.Id">Remover</button>
+        </fieldset>
+    </form>
+</div> 
+@section Scripts { 
+    <partial name="_Scripts" />
+}
